@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Spice Source Hub Design System - Indian street food marketplace
+All colors MUST be HSL for proper theming.
+*/
+
+@layer base {
+  :root {
+    /* Base colors */
+    --background: 35 35% 97%;
+    --foreground: 20 20% 15%;
+
+    /* Card components */
+    --card: 0 0% 100%;
+    --card-foreground: 20 20% 15%;
+
+    /* Popover components */
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 20% 15%;
+
+    /* Primary - Turmeric/Saffron inspired */
+    --primary: 35 85% 55%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 35 90% 65%;
+
+    /* Secondary - Warm spice */
+    --secondary: 25 40% 88%;
+    --secondary-foreground: 20 20% 15%;
+
+    /* Muted tones */
+    --muted: 25 25% 92%;
+    --muted-foreground: 20 15% 45%;
+
+    /* Accent - Chili red */
+    --accent: 8 75% 58%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Success - Mint green */
+    --success: 142 70% 45%;
+    --success-foreground: 0 0% 100%;
+
+    /* Warning - Paprika orange */
+    --warning: 20 85% 60%;
+    --warning-foreground: 0 0% 100%;
+
+    /* Destructive */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Form elements */
+    --border: 25 25% 85%;
+    --input: 25 25% 90%;
+    --ring: 35 85% 55%;
+
+    /* Border radius */
+    --radius: 0.5rem;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-warm: linear-gradient(135deg, hsl(var(--warning)), hsl(var(--primary)));
+    --gradient-success: linear-gradient(135deg, hsl(var(--success)), hsl(142 60% 55%));
+
+    /* Shadows */
+    --shadow-warm: 0 10px 30px -10px hsl(var(--primary) / 0.3);
+    --shadow-soft: 0 4px 20px -4px hsl(var(--foreground) / 0.1);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Sidebar colors */
+    --sidebar-background: 35 30% 96%;
+    --sidebar-foreground: 20 20% 25%;
+    --sidebar-primary: 35 85% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 25 40% 90%;
+    --sidebar-accent-foreground: 20 20% 25%;
+    --sidebar-border: 25 25% 88%;
+    --sidebar-ring: 35 85% 55%;
+  }
+
+  .dark {
+    --background: 20 25% 8%;
+    --foreground: 35 15% 92%;
+
+    --card: 20 20% 12%;
+    --card-foreground: 35 15% 92%;
+
+    --popover: 20 20% 12%;
+    --popover-foreground: 35 15% 92%;
+
+    --primary: 35 85% 65%;
+    --primary-foreground: 20 25% 8%;
+    --primary-glow: 35 90% 70%;
+
+    --secondary: 20 15% 18%;
+    --secondary-foreground: 35 15% 85%;
+
+    --muted: 20 15% 15%;
+    --muted-foreground: 20 10% 55%;
+
+    --accent: 8 75% 65%;
+    --accent-foreground: 20 25% 8%;
+
+    --success: 142 70% 50%;
+    --success-foreground: 20 25% 8%;
+
+    --warning: 20 85% 65%;
+    --warning-foreground: 20 25% 8%;
+
+    --destructive: 0 84% 65%;
+    --destructive-foreground: 20 25% 8%;
+
+    --border: 20 15% 20%;
+    --input: 20 15% 18%;
+    --ring: 35 85% 65%;
+
+    --sidebar-background: 20 20% 10%;
+    --sidebar-foreground: 35 15% 85%;
+    --sidebar-primary: 35 85% 60%;
+    --sidebar-primary-foreground: 20 25% 8%;
+    --sidebar-accent: 20 15% 15%;
+    --sidebar-accent-foreground: 35 15% 85%;
+    --sidebar-border: 20 15% 18%;
+    --sidebar-ring: 35 85% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
